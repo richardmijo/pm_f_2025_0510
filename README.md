@@ -32,24 +32,3 @@ semana_01/
     └── proyecto_flutter_01/
         ├── lib/
         └── pubspec.yaml
-
-
-# Calculadora de Productividad Personal
-
-## 📌 ¿Qué hace este programa?
-
-Permite al usuario calcular su índice de productividad semanal en base al número de horas dedicadas a diferentes actividades. Muestra porcentajes y proporciona alertas o sugerencias sobre sus hábitos de tiempo.
-
-## 💡 ¿Qué aprendí de Dart?
-
-- Uso de clases (`Actividad`) para modelar datos.
-- Entrada de datos por consola con `stdin`.
-- Funciones y ciclos (`while`, `for`) para procesar dinámicamente entradas.
-- Condicionales para validaciones y recomendaciones personalizadas.
-- Colecciones (`List`) para almacenar actividades.
-
-## ▶️ ¿Cómo ejecutarlo?
-
-1. Asegúrate de tener Dart instalado. Verifica con:
-   ```bash
-   dart --version
