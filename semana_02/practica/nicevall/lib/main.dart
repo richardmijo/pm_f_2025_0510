@@ -105,7 +105,7 @@ class MiTarjetaHomePage extends StatelessWidget {
             const CircleAvatar(
               radius: 60, // Tamaño del círculo
               backgroundImage: NetworkImage(
-                'https://www.facebook.com/plantsvszombiszombatar/?locale=id_ID',
+                'https://scontent.fuio13-1.fna.fbcdn.net/v/t39.30808-6/462710619_8424333154287952_6960447076264098999_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=My7-qeiF1wQQ7kNvwEYIN4o&_nc_oc=AdlLQTj7N4PX6AHFGeVCjOAHzR-LW-lTshc91qDRQ6BlksTARBntqrS7LWCcnqWfmlw&_nc_zt=23&_nc_ht=scontent.fuio13-1.fna&_nc_gid=Q9aVfreHh_05u2r9E-iW3w&oh=00_AfLrk8PRD05F0KyHBYQ8KghEEcXbpURFxVOXm8EaQqMWMw&oe=682B268F',
               ),
             ),
             const SizedBox(height: 10), // Espacio entre la imagen y el texto
