@@ -13,7 +13,7 @@ class MiTarjetaApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Mi Perfil Personal',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const PerfilPersonal(),
@@ -29,7 +29,7 @@ class PerfilPersonal extends StatelessWidget {
       context: context,
       builder:
           (_) => AlertDialog(
-            title: Text("Opción seleccionada"),
+            title: const Text("Opción seleccionada"),
             content: Text("Elegiste: $opcion"),
             actions: [
               TextButton(
@@ -41,15 +41,6 @@ class PerfilPersonal extends StatelessWidget {
     );
   }
 
-  void _mostrarSnackBar(BuildContext context) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text("Presionaste el botón principal"),
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,18 +49,18 @@ class PerfilPersonal extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.person),
-          onPressed: () => _mostrarSnackBar(context),
+          onPressed: () => _mostrarDialogo(context, "Perfil"),
         ),
         actions: [
           PopupMenuButton<String>(
             onSelected: (value) => _mostrarDialogo(context, value),
             itemBuilder:
-                (BuildContext context) => [
-                  const PopupMenuItem(
+                (BuildContext context) => const [
+                  PopupMenuItem(
                     value: "Mostrar Alerta",
                     child: Text("Mostrar Alerta"),
                   ),
-                  const PopupMenuItem(
+                  PopupMenuItem(
                     value: "Otra opción",
                     child: Text("Otra opción"),
                   ),
@@ -77,7 +68,6 @@ class PerfilPersonal extends StatelessWidget {
           ),
         ],
       ),
-
       backgroundColor: Colors.teal.shade100,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -119,19 +109,19 @@ class PerfilPersonal extends StatelessWidget {
                 color: Colors.teal,
               ),
               _buildInfoCard(
-                context,
                 icon: Icons.phone,
-                text: '+593 123 456 789',
+                text: '+5939392558',
+                context: context,
               ),
               _buildInfoCard(
-                context,
                 icon: Icons.email,
                 text: 'esgonzalezca@gmail.com',
+                context: context,
               ),
               _buildInfoCard(
-                context,
                 icon: Icons.location_city,
                 text: 'Loja, Ecuador',
+                context: context,
               ),
               const SizedBox(height: 20),
               ElevatedButton(
@@ -157,10 +147,10 @@ class PerfilPersonal extends StatelessWidget {
     );
   }
 
-  Widget _buildInfoCard(
-    BuildContext context, {
+  Widget _buildInfoCard({
     required IconData icon,
     required String text,
+    required BuildContext context,
   }) {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 8),
