@@ -17,7 +17,7 @@ class MiTarjetaApp extends StatelessWidget {
           false, // Oculta la etiqueta de "debug" en la esquina superior
       home: Scaffold(
         appBar: AppBar(
-          title: Text("appbar"),
+          title: Text("Cambio de nombre"),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
