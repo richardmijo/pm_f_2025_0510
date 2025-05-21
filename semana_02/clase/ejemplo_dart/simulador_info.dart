@@ -27,7 +27,7 @@ void main22() {
 
   // Uso del operador "!" (null assertion): solo si estás 100% seguro de que NO es null
   if (correo != null) {
-    print('Dominio del correo: ${correo!.split('@').last}');
+    print('Dominio del correo: ${correo.split('@').last}');
   }
 
   // ¡Error si se usa nombre sin inicializar! Pero como usamos `late`, Dart lo permite con seguridad.
