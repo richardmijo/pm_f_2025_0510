@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = facampoverdemu
+PRODUCT_NAME = riarmijosme_c
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = ec.edu.uide.facampoverdemu
+PRODUCT_BUNDLE_IDENTIFIER = ec.edu.uide.riarmijosmec
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2025 ec.edu.uide. All rights reserved.

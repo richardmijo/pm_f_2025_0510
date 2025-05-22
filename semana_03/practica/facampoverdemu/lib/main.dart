@@ -1,45 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:facampoverdemu/presentation/screens/counter/counter_functions_screen.dart';
+//import 'package:riarmijosme_c/presentation/screens/counter/counter_screen.dart';
 
-class CounterScreen extends StatefulWidget {
-  const CounterScreen({super.key});
-
-  @override
-  State<CounterScreen> createState() => _CounterScreenState();
+void main() {
+  runApp(const MyApp());
 }
 
-class _CounterScreenState extends State<CounterScreen> {
-  int clickCounter = 0;
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        // Center envuelve todo el contenido
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "$clickCounter",
-              style: const TextStyle(
-                fontSize: 160,
-                fontWeight: FontWeight.w100,
-              ),
-            ),
-            Text(
-              clickCounter == 1 ? "click" : "clicks",
-              style: const TextStyle(fontSize: 50, fontWeight: FontWeight.w500),
-            ),
-          ],
-        ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.grey
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            clickCounter++;
-          });
-        },
-        child: const Icon(Icons.plus_one),
-      ),
+      home: CounterFunctionsScreen(),
     );
   }
 }
