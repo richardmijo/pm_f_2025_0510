@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riarmijosme_c/presentation/screens/counter/counter_functions_screen.dart';
+import 'package:facampoverdemu/presentation/screens/counter/counter_functions_screen.dart';
 //import 'package:riarmijosme_c/presentation/screens/counter/counter_screen.dart';
 
 void main() {
