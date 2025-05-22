@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:frguamango/presentation/screens/counter/counter_functions.dart';
 // import 'package:frguamango/presentation/screens/counter/counter_screen.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
