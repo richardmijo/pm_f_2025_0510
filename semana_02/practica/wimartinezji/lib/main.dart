@@ -18,7 +18,7 @@ class MiTarjetaApp extends StatelessWidget {
         appBar: MiAppBar(), // AppBar personalizado
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
         backgroundColor: Colors.indigo, // Color de fondo cambiado
         body: Center(
@@ -80,8 +80,8 @@ class MiTarjetaApp extends StatelessWidget {
               const SizedBox(height: 10),
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: Icon(Icons.web),
-                label: Text('Visitar sitio web'),
+                icon: const Icon(Icons.web),
+                label: const Text('Visitar sitio web'),
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
                   backgroundColor: Colors.amber,
@@ -113,14 +113,16 @@ class MiTarjetaApp extends StatelessWidget {
 
 // AppBar personalizado
 class MiAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const MiAppBar({super.key});
+
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.amber, // Color de fondo diferente
-      title: Row(
+      title: const Row(
         children: [
           Icon(Icons.person_pin), // Icono personalizado
           SizedBox(width: 10),
