@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "ec.edu.uide" "\0"
-            VALUE "FileDescription", "facampoverdemu" "\0"
+            VALUE "FileDescription", "riarmijosme_c" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "facampoverdemu" "\0"
+            VALUE "InternalName", "riarmijosme_c" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 ec.edu.uide. All rights reserved." "\0"
-            VALUE "OriginalFilename", "facampoverdemu.exe" "\0"
-            VALUE "ProductName", "facampoverdemu" "\0"
+            VALUE "OriginalFilename", "riarmijosme_c.exe" "\0"
+            VALUE "ProductName", "riarmijosme_c" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
