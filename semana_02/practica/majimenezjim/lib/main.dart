@@ -24,6 +24,8 @@ class MiTarjetaApp extends StatelessWidget {
 }
 
 class MiPaginaPrincipal extends StatelessWidget {
+  const MiPaginaPrincipal({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
